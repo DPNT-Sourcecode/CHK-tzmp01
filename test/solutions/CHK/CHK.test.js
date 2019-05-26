@@ -49,3 +49,24 @@ test("if the passed value is not a string then the function should return a -1",
 test("if no products are passed then the result is 0", () => {
   expect(checkout("")).toBe(0);
 });
+
+test("if 5 A products are passed then the price is 200", () => {
+  expect(checkout("AAAAA")).toBe(200);
+});
+
+test("if 9 A products are passed then the price is 200", () => {
+  expect(checkout("AAAAAAAAA")).toBe(360);
+});
+
+test("if 15 A products are passed then the price is 200", () => {
+  expect(checkout("AAAAAAAAAAAAAAA")).toBe(600);
+});
+
+test("if an e product is passed then it returns the value for E", () => {
+  expect(checkout("E")).toBe(40);
+});
+
+test("if two e products and a b product are bought then the b product is free", () => {
+  expect(checkout("BEE")).toBe(80);
+});
+
