@@ -62,6 +62,10 @@ test("if 10 A products are passed then the price is 400", () => {
   expect(checkout("AAAAAAAAAA")).toBe(400);
 });
 
+test("if 11 A products are passed then the price is 450", () => {
+  expect(checkout("AAAAAAAAAAA")).toBe(450);
+});
+
 test("if 15 A products are passed then the price is 600", () => {
   expect(checkout("AAAAAAAAAAAAAAA")).toBe(600);
 });
@@ -77,6 +81,7 @@ test("if two e products and a b product are bought then the b product is free", 
 test("if four e products and four b product are bought then two B products are feww and the b discount is still applied", () => {
   expect(checkout("BBBBEEEE")).toBe(205);
 });
+
 
 
 
