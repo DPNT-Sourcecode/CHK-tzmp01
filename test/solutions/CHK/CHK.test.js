@@ -32,9 +32,10 @@ test("passing multiple products will return a sum of their prices", () => {
   expect(checkout("ABCD")).toBe(115);
 });
 
-expect("passing three A products will return a discounted value", () => {
+test("passing three A products will return a discounted value", () => {
   expect(checkout("AAA")).toBe(130);
 });
+
 
 
 
