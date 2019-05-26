@@ -49,4 +49,3 @@ test("if the passed value is not a string then the function should return a -1",
 test("if no products are passed then the result is 0", () => {
   expect(checkout("")).toBe(0);
 });
-
