@@ -16,10 +16,6 @@ test("passing the price for D returns the value for D", () => {
   expect(checkout("D")).toBe(15);
 });
 
-test("passing a null or empty string returns -1", () => {
-  expect(checkout("")).toBe(-1);
-});
-
 test("passing the price for E returns the an error as E does not exist", () => {
   expect(checkout("E")).toBe(-1);
 });
@@ -47,4 +43,10 @@ test("if the passed value is not a string then the function should return a -1",
   expect(checkout(1)).toBe(-1);
   expect(checkout(null)).toBe(-1);
   expect(checkout(undefined)).toBe(-1);
+  expect(checkout()).toBe(-1);
 });
+
+test("if no products are passed then the result is 0", () => {
+  expect(checkout("")).toBe(0);
+});
+
