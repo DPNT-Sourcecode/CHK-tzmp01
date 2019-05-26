@@ -8,7 +8,7 @@ test("test2", () => {
   expect(checkout.priceA(3)).toBe(130);
 });
 
-test("test3", () => {
+test.only("test3", () => {
   expect(checkout.priceA(5)).toBe(200);
 });
 
@@ -65,5 +65,6 @@ test("test4", () => {
 // test("if no products are passed then the result is 0", () => {
 //   expect(checkout("")).toBe(0);
 // });
+
 
 
