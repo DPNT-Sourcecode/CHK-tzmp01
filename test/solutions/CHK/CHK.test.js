@@ -23,3 +23,8 @@ test("passing a null or empty string returns -1", () => {
 test("passing the price for E returns the an error as E does not exist", () => {
   expect(checkout("E")).toBe(-1);
 });
+
+test("passing a non allowed character in the list should return -1", () => {
+  expect(checkout("AxA")).toBe(-1);
+});
+
