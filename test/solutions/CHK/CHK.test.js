@@ -1,11 +1,11 @@
 const checkout = require("../../../lib/solutions/CHK/checkout");
 
 test("test1", () => {
-  expect(checkout.priceA(1)).toBe(50);
+  expect(checkout.priceB(1, 0)).toBe(30);
 });
 
 test("test2", () => {
-  expect(checkout.priceA(3)).toBe(130);
+  expect(checkout.priceB(2, 0)).toBe(130);
 });
 
 test("test3", () => {
@@ -65,6 +65,7 @@ test("test4", () => {
 // test("if no products are passed then the result is 0", () => {
 //   expect(checkout("")).toBe(0);
 // });
+
 
 
 
