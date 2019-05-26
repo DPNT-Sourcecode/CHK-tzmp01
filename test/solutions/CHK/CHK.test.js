@@ -1,4 +1,4 @@
-const checkout = require("../../../lib/solutions/CHK/checkout");
+import checkout from "../../../lib/solutions/CHK/checkout";
 
 test("passing the price for A returns the value for A", () => {
   expect(checkout("A")).toBe(50);
@@ -49,3 +49,4 @@ test("if the passed value is not a string then the function should return a -1",
 test("if no products are passed then the result is 0", () => {
   expect(checkout("")).toBe(0);
 });
+
