@@ -5,15 +5,27 @@ test("test1", () => {
 });
 
 test("test2", () => {
-  expect(checkout.priceB(2, 0)).toBe(130);
+  expect(checkout.priceB(2, 0)).toBe(45);
 });
 
 test("test3", () => {
-  expect(checkout.priceA(5)).toBe(200);
+  expect(checkout.priceB(4, 0)).toBe(90);
 });
 
 test("test4", () => {
-  expect(checkout.priceA(15)).toBe(600);
+  expect(checkout.priceB(1, 2)).toBe(0);
+});
+
+test("test4", () => {
+  expect(checkout.priceB(1, 4)).toBe(0);
+});
+
+test("test4", () => {
+  expect(checkout.priceB(2, 2)).toBe(30);
+});
+
+test("test4", () => {
+  expect(checkout.priceB(4, 2)).toBe(75);
 });
 
 // test("passing the price for A returns the value for A", () => {
@@ -65,6 +77,7 @@ test("test4", () => {
 // test("if no products are passed then the result is 0", () => {
 //   expect(checkout("")).toBe(0);
 // });
+
 
 
 
