@@ -21,5 +21,3 @@ describe("SUM challenge: adding two numbers", function() {
     expect(() => sum(1, 102)).toThrowError("param[1] is greater than 100");
   });
 });
-
-
