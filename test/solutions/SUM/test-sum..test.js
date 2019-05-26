@@ -1,22 +1,12 @@
-var mocha = require("mocha");
-var describe = mocha.describe;
-var it = mocha.it;
-var assert = require("assert");
 const sum = require("../../../lib/solutions/SUM/sum");
 
 describe("SUM challenge: adding two numbers", function() {
   it("should return 3, which is the sum of 1 and 2", function() {
-    assert.equal(sum(1, 2), 3);
+    expect(sum(1, 2)).toBe(3);
   });
 
-  it("should throw an error when param[0] is less than 0", function() {
-    assert.throws(
-      function() {
-        sum(-1, 2);
-      },
-      Error,
-      "param[0] is less than 0"
-    );
+  it.only("should throw an error when param[0] is less than 0", function() {
+    expect(sum(-1, 2)).toThrow("Error: param[0] is less than 0");
   });
 
   it("should throw an error when param[1] is less than 0", function() {
@@ -31,4 +21,3 @@ describe("SUM challenge: adding two numbers", function() {
     asssert.throws(sum(1, 102));
   });
 });
-
