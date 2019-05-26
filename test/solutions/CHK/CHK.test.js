@@ -16,7 +16,12 @@ test("passing the price for D returns the value for D", () => {
   expect(checkout("D")).toBe(15);
 });
 
-test("passing the price for E returns the an error as E does not exist", () => {
-  expect(() => checkout("E")).toThrowError("Product doesn`t exist");
+test("passing a null or empty string returns -1", () => {
+  expect(checkout("")).toBe(-1);
 });
+
+test("passing the price for E returns the an error as E does not exist", () => {
+  expect(checkout("E")).toBe(-1);
+});
+
 
