@@ -36,6 +36,11 @@ test("passing three A products will return a discounted value", () => {
   expect(checkout("AAA")).toBe(130);
 });
 
+test("passing two B products will return a discounted value", () => {
+  expect(checkout("BB")).toBe(45);
+});
+
+
 
 
 
