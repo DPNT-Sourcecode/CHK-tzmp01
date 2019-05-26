@@ -40,7 +40,11 @@ test("passing two B products will return a discounted value", () => {
   expect(checkout("BB")).toBe(45);
 });
 
-
-
-
-
+test("if the passed value is not a string then the function should return a -1", () => {
+  expect(checkout([""])).toBe(-1);
+  expect(checkout([])).toBe(-1);
+  expect(checkout({})).toBe(-1);
+  expect(checkout(1)).toBe(-1);
+  expect(checkout(null)).toBe(-1);
+  expect(checkout(undefined)).toBe(-1);
+});
