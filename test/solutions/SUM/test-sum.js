@@ -10,7 +10,13 @@ describe("SUM challenge: adding two numbers", function() {
   });
 
   it("should throw an error when param[0] is less than 0", function() {
-    assert.throws(sum(-1, 2));
+    assert.throws(
+      function() {
+        sum(-1, 2);
+      },
+      Error,
+      "param[0] is less than 0"
+    );
   });
 
   it("should throw an error when param[1] is less than 0", function() {
@@ -25,3 +31,4 @@ describe("SUM challenge: adding two numbers", function() {
     asssert.throws(sum(1, 102));
   });
 });
+
