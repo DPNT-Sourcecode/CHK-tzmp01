@@ -28,3 +28,8 @@ test("passing a non allowed character in the list should return -1", () => {
   expect(checkout("AxA")).toBe(-1);
 });
 
+test("passing multiple products will return a sum of their prices", () => {
+  expect(checkout("ABCD")).toBe(115);
+});
+
+
