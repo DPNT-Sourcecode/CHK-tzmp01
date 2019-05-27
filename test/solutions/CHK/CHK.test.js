@@ -198,9 +198,13 @@ test("passing a product V returns the price for product V", () => {
   expect(checkout("V")).toBe(50);
 });
 
-test.todo("2 V for 90");
+test("purchasing 2 V returns a price of 90", () => {
+  expect(checkout("VV")).toBe(90);
+});
 
-test.todo("3 V for 130");
+test("purchasing 3 V returns a price of 130", () => {
+  expect(checkout("VVV")).toBe(130);
+});
 
 test("passing a product W returns the price for product W", () => {
   expect(checkout("W")).toBe(20);
@@ -217,6 +221,7 @@ test("passing a product Y returns the price for product Y", () => {
 test("passing a product Z returns the price for product Z", () => {
   expect(checkout("Z")).toBe(50);
 });
+
 
 
 
