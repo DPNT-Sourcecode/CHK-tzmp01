@@ -247,7 +247,7 @@ test("four S products will be 45 for the triple and 20 for the remainder", () =>
 });
 
 test("2 x products and 2 y products will be 45 for the three and 20 for the remaining y", () => {
-  expect(checkout("XXYY")).toBe(65);
+  expect(checkout("XXYY")).toBe(62);
 });
 
 test('"SSSZ" should be 65', () => {
@@ -261,3 +261,4 @@ test('"ZZZS" should be 65', () => {
 test('"STXS" should be 65', () => {
   expect(checkout("STXS")).toBe(62);
 });
+
