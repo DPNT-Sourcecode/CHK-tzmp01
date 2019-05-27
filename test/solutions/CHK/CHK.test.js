@@ -102,9 +102,13 @@ test("passing a product H returns the price for product H", () => {
   expect(checkout("H")).toBe(10);
 });
 
-test.todo("passing 5 H for 45");
+test("if 5 H products are passed then the price is 45", () => {
+  expect(checkout("HHHHH")).toBe(45);
+});
 
-test.todo("passing 10 H for 80");
+test.only("if 10 H products are passed then the price is 80", () => {
+  expect(checkout("HHHHHHHHHH")).toBe(80);
+});
 
 test("passing a product I returns the price for product I", () => {
   expect(checkout("I")).toBe(35);
@@ -193,6 +197,7 @@ test("passing a product Y returns the price for product Y", () => {
 test("passing a product Z returns the price for product Z", () => {
   expect(checkout("Z")).toBe(50);
 });
+
 
 
 
