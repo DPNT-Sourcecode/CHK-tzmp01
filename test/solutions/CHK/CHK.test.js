@@ -78,7 +78,7 @@ test("if two e products and a b product are bought then the b product is free", 
   expect(checkout("BEE")).toBe(80);
 });
 
-test("if four e products and four b product are bought then two B products are feww and the b discount is still applied", () => {
+test("if four e products and four b product are bought then two B products are few and the b discount is still applied", () => {
   expect(checkout("BBBBEEEE")).toBe(205);
 });
 
@@ -138,7 +138,13 @@ test("passing a product N returns the price for product N", () => {
   expect(checkout("N")).toBe(40);
 });
 
-test.todo("passing 3 N and 1 M makes the M free");
+test("if 3 N producs are passed and 1 M product the M product is free", () => {
+  expect(checkout("NNNM")).toBe(120);
+});
+
+test("if 3 N producs are passed and 2 M products one of the M products is free", () => {
+  expect(checkout("NNNMM")).toBe(135);
+});
 
 test("passing a product O returns the price for product O", () => {
   expect(checkout("O")).toBe(10);
@@ -199,3 +205,4 @@ test("passing a product Y returns the price for product Y", () => {
 test("passing a product Z returns the price for product Z", () => {
   expect(checkout("Z")).toBe(50);
 });
+
