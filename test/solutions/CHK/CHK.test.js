@@ -206,6 +206,22 @@ test("purchasing 3 V returns a price of 130", () => {
   expect(checkout("VVV")).toBe(130);
 });
 
+test("purchasing 4 V returns a price of 130 for 3 and 50 for 1", () => {
+  expect(checkout("VVVV")).toBe(180);
+});
+
+test("purchasing 5 V returns a price of 130 for 3 and 90 for 2", () => {
+  expect(checkout("VVVVV")).toBe(220);
+});
+
+test("purchasing 6 V returns a price of 130 for each set of 3", () => {
+  expect(checkout("VVVVVV")).toBe(260);
+});
+
+test("purchasing 7 V returns a price of 130 for each of 2 sets of 3 and 50 for the extra one", () => {
+  expect(checkout("VVVVVVV")).toBe(310);
+});
+
 test("passing a product W returns the price for product W", () => {
   expect(checkout("W")).toBe(20);
 });
@@ -221,6 +237,7 @@ test("passing a product Y returns the price for product Y", () => {
 test("passing a product Z returns the price for product Z", () => {
   expect(checkout("Z")).toBe(50);
 });
+
 
 
 
