@@ -238,4 +238,11 @@ test("passing a product Z returns the price for product Z", () => {
   expect(checkout("Z")).toBe(21);
 });
 
+test.todo("three s products will be 45");
+
+test.todo(
+  "2 x products and 2 y products will be 45 for the three and 20 for the remaining y"
+);
+
+
 
