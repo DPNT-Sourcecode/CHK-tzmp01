@@ -82,16 +82,17 @@ test("if four e products and four b product are bought then two B products are f
   expect(checkout("BBBBEEEE")).toBe(205);
 });
 
-test.only("if a single F product is purchased the value of f is returned", () => {
+test("if a single F product is purchased the value of f is returned", () => {
   expect(checkout("F")).toBe(10);
 });
 
-test.only("if three F products are purchased then the price is shown for only 2", () => {
+test("if three F products are purchased then the price is shown for only 2", () => {
   expect(checkout("FFF")).toBe(20);
 });
 
-test.only("if 6 F products are purchased then the price paid is only for 4", () => {
+test("if 6 F products are purchased then the price paid is only for 4", () => {
   expect(checkout("FFFFFF")).toBe(40);
 });
+
 
 
