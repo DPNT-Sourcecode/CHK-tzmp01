@@ -238,6 +238,11 @@ test("passing a product Z returns the price for product Z", () => {
   expect(checkout("Z")).toBe(50);
 });
 
+test.only("example test", () => {
+  expect(checkout("PPPPPPQQQRRRUUUUVVVS")).toBe(740);
+});
+
+
 
 
 
