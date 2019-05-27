@@ -17,7 +17,7 @@ test("passing the price for D returns the value for D", () => {
 });
 
 test("passing the price for E returns the an error as E does not exist", () => {
-  expect(checkout("Z")).toBe(-1);
+  expect(checkout("a")).toBe(-1);
 });
 
 test("passing a non allowed character in the list should return -1", () => {
@@ -93,6 +93,7 @@ test("if three F products are purchased then the price is shown for only 2", () 
 test("if 6 F products are purchased then the price paid is only for 4", () => {
   expect(checkout("FFFFFF")).toBe(40);
 });
+
 
 
 
