@@ -93,7 +93,3 @@ test("if three F products are purchased then the price is shown for only 2", () 
 test("if 6 F products are purchased then the price paid is only for 4", () => {
   expect(checkout("FFFFFF")).toBe(40);
 });
-
-
-
-
