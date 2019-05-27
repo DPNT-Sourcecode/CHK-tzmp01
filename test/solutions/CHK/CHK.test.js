@@ -93,3 +93,94 @@ test("if three F products are purchased then the price is shown for only 2", () 
 test("if 6 F products are purchased then the price paid is only for 4", () => {
   expect(checkout("FFFFFF")).toBe(40);
 });
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product H returns the price for product H", () => {
+  expect(checkout("H")).toBe(10);
+});
+
+test.todo("passing 5 H for 45");
+
+test.todo("passing 10 H for 80");
+
+test("passing a product I returns the price for product I", () => {
+  expect(checkout("I")).toBe(35);
+});
+
+test("passing a product J returns the price for product J", () => {
+  expect(checkout("J")).toBe(60);
+});
+
+test("passing a product K returns the price for product K", () => {
+  expect(checkout("K")).toBe(80);
+});
+
+test.todo("passing 2 K for 150");
+
+test("passing a product L returns the price for product L", () => {
+  expect(checkout("L")).toBe(90);
+});
+
+test("passing a product M returns the price for product M", () => {
+  expect(checkout("M")).toBe(15);
+});
+
+test("passing a product N returns the price for product N", () => {
+  expect(checkout("N")).toBe(40);
+});
+
+test.todo("passing 3 N and 1 M makes the M free");
+
+test("passing a product O returns the price for product O", () => {
+  expect(checkout("O")).toBe(10);
+});
+
+test("passing a product P returns the price for product P", () => {
+  expect(checkout("P")).toBe(50);
+});
+
+test.todo("pasing 5 P for 200");
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
+test("passing a product G returns the price for product G", () => {
+  expect(checkout("G")).toBe(20);
+});
+
