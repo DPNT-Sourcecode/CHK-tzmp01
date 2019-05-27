@@ -246,10 +246,3 @@ test.only("example test", () => {
   expect(checkout("QQQRRR")).toBe(210);
   // expect(checkout("PPPPPPQQQRRRUUUUVVVS")).toBe(740);
 });
-
-
-
-
-
-
-
