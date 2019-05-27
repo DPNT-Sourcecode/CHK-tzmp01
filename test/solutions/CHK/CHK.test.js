@@ -16,7 +16,7 @@ test("passing the price for D returns the value for D", () => {
   expect(checkout("D")).toBe(15);
 });
 
-test("passing the price for E returns the an error as E does not exist", () => {
+test("passing the price for 'lower case' `a` returns the an error as `a` does not exist", () => {
   expect(checkout("a")).toBe(-1);
 });
 
@@ -245,4 +245,5 @@ test("three S products will be 45", () => {
 test.todo(
   "2 x products and 2 y products will be 45 for the three and 20 for the remaining y"
 );
+
 
