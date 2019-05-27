@@ -242,8 +242,13 @@ test("three S products will be 45", () => {
   expect(checkout("SSS")).toBe(45);
 });
 
-test.todo(
-  "2 x products and 2 y products will be 45 for the three and 20 for the remaining y"
-);
+test("four S products will be 45 for the triple and 20 for the remainder", () => {
+  expect(checkout("SSSS")).toBe(65);
+});
+
+test("2 x products and 2 y products will be 45 for the three and 20 for the remaining y", () => {
+  expect(checkout("XXYY")).toBe(65);
+});
+
 
 
