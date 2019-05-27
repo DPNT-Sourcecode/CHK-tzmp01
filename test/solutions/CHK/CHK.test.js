@@ -179,7 +179,7 @@ test("if 3 R producs are passed and 2 Q products one of the Q products is free",
 });
 
 test("passing a product S returns the price for product S", () => {
-  expect(checkout("S")).toBe(30);
+  expect(checkout("S")).toBe(20);
 });
 
 test("passing a product T returns the price for product T", () => {
@@ -227,14 +227,15 @@ test("passing a product W returns the price for product W", () => {
 });
 
 test("passing a product X returns the price for product X", () => {
-  expect(checkout("X")).toBe(90);
+  expect(checkout("X")).toBe(17);
 });
 
 test("passing a product Y returns the price for product Y", () => {
-  expect(checkout("Y")).toBe(10);
+  expect(checkout("Y")).toBe(20);
 });
 
 test("passing a product Z returns the price for product Z", () => {
-  expect(checkout("Z")).toBe(50);
+  expect(checkout("Z")).toBe(21);
 });
+
 
