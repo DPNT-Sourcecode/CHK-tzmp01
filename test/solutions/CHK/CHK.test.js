@@ -119,11 +119,11 @@ test("passing a product J returns the price for product J", () => {
 });
 
 test("passing a product K returns the price for product K", () => {
-  expect(checkout("K")).toBe(80);
+  expect(checkout("K")).toBe(70);
 });
 
 test("if 2 K products are passed then the price is 150", () => {
-  expect(checkout("KK")).toBe(150);
+  expect(checkout("KK")).toBe(120);
 });
 
 test("passing a product L returns the price for product L", () => {
@@ -249,6 +249,7 @@ test("four S products will be 45 for the triple and 20 for the remainder", () =>
 test("2 x products and 2 y products will be 45 for the three and 20 for the remaining y", () => {
   expect(checkout("XXYY")).toBe(65);
 });
+
 
 
 
