@@ -170,24 +170,29 @@ test("passing a product U returns the price for product U", () => {
 
 test.todo("if buying 4 U one is free");
 
-test("passing a product G returns the price for product G", () => {
-  expect(checkout("G")).toBe(20);
+test("passing a product V returns the price for product V", () => {
+  expect(checkout("V")).toBe(50);
 });
 
-test("passing a product G returns the price for product G", () => {
-  expect(checkout("G")).toBe(20);
+test.todo("2 V for 90");
+
+test.todo("3 V for 130");
+
+test("passing a product W returns the price for product W", () => {
+  expect(checkout("W")).toBe(20);
 });
 
-test("passing a product G returns the price for product G", () => {
-  expect(checkout("G")).toBe(20);
+test("passing a product X returns the price for product X", () => {
+  expect(checkout("X")).toBe(90);
 });
 
-test("passing a product G returns the price for product G", () => {
-  expect(checkout("G")).toBe(20);
+test("passing a product Y returns the price for product Y", () => {
+  expect(checkout("Y")).toBe(10);
 });
 
-test("passing a product G returns the price for product G", () => {
-  expect(checkout("G")).toBe(20);
+test("passing a product Z returns the price for product Z", () => {
+  expect(checkout("Z")).toBe(50);
 });
+
 
 
